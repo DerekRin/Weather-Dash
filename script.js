@@ -1,5 +1,10 @@
 var cityIsNamed = "Boston"
 
+const handleClick = () => {
+    console.log('test')
+}
+
+
 function city (cityName) { 
     var url = "https://api.openweathermap.org/data/2.5/weather?q=" + cityName + "&appid=c1c982f2047f84e21fb72b51a10b5d1b"
     fetch(url).then(data => {
